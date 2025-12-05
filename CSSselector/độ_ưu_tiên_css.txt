@@ -1,0 +1,2 @@
+internal, external > inline > id > class > tag > *
+trong truong hop bang nhau thi cai nao khai bao sau thi se duoc chon
