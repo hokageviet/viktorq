@@ -1,0 +1,47 @@
+/* css dấu"*" là chọn tất cả, dùng để reset padding và margin hoặc 1 số thuộc tính khác */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* chọn trực tiếp class có tên title */
+.title {
+    color: rebeccapurple;
+}
+
+/* chọn các class có đồng thời tên abc và cba */
+.abc.cba {
+    color: red;
+}
+
+/* chọn class title là con của element box bất kể bên ngoài title có bao nhiêu thẻ bao nó*/
+.box .title {
+    color: black;
+}
+
+/* có thể chọn các element của html để áp dụng cho tất cả các element đó*/
+p{
+    color: aqua;
+}
+
+/* chọn thẻ h3 có class title tránh bị trùng với các thẻ khác cũng có class title */
+h3.title {
+    color:blue ;
+}
+
+/* các element có cùng kiểu css nhưng tránh bị code lặp lại thì làm như dưới */
+.title1, .title2, .title3 {
+    color: brown;
+}
+
+/* chọn element title là con trực tiếp với box1 không có thẻ khác bao nó ngoài box1  */
+.box1 > .title {
+    color: aquamarine;
+}
+
+/* chọn tất cả class giống tên nhau trừ cái đầu tiên và các class đó phải liền kề nhau
+nếu thay bằng dấu ~ thì nó sẽ chọn tất cả thẻ đằng sau bất kể là con hay ko  */
+.titleh3 + .titleh3{
+    color: rebeccapurple;
+}
